@@ -1,0 +1,4 @@
+$char = a e i m;
+(sil $char $char $char $char sil)$char = a e i m;
+(sil $char $char $char $char sil)$char = a e i m;
+(sil $char $char $char $char sil)
