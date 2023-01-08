@@ -1,0 +1,57 @@
+HResults -A -e ??? sil -T 1 -t -I /tmp/mlf/labels.mlf_letter -p /tmp/commands/commands_letter_isolated_ai_general /tmp/ext/result.mlf_letter0 
+Aligned transcription: /tmp/ext/data/picklist_25.lab vs /tmp/ext/data/picklist_25.rec
+ LAB:                 a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_36.lab vs /tmp/ext/data/picklist_36.rec
+ LAB:                         a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_30.lab vs /tmp/ext/data/picklist_30.rec
+ LAB:         a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_11.lab vs /tmp/ext/data/picklist_11.rec
+ LAB:         a e i m a e i m a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_37.lab vs /tmp/ext/data/picklist_37.rec
+ LAB:                         a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_9.lab vs /tmp/ext/data/picklist_9.rec
+ LAB:         a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_4.lab vs /tmp/ext/data/picklist_4.rec
+ LAB:         a e i m a e i m a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_38.lab vs /tmp/ext/data/picklist_38.rec
+ LAB:         a e i m a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_29.lab vs /tmp/ext/data/picklist_29.rec
+ LAB:         a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_28.lab vs /tmp/ext/data/picklist_28.rec
+ LAB:         a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_39.lab vs /tmp/ext/data/picklist_39.rec
+ LAB:                 a e i m a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_27.lab vs /tmp/ext/data/picklist_27.rec
+ LAB:         a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m 
+Aligned transcription: /tmp/ext/data/picklist_5.lab vs /tmp/ext/data/picklist_5.rec
+ LAB:         a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+ REC: a e i m a e i m a e i m a e i m a e i m a e i m a e i m a e i m 
+====================== HTK Results Analysis =======================
+  Date: Sun Jan  8 02:53:06 2023
+  Ref : /tmp/mlf/labels.mlf_letter
+  Rec : /tmp/ext/result.mlf_letter0
+------------------------ Overall Results --------------------------
+SENT: %Correct=67.50 [H=27, S=13, N=40]
+WORD: %Corr=100.00, Acc=89.67 [H=736, D=0, S=0, I=76, N=736]
+------------------------ Confusion Matrix -------------------------
+       a   e   i   m 
+                     
+                      Del [ %c / %e]
+   a  184  0   0   0    0
+   e   0  184  0   0    0
+   i   0   0  184  0    0
+   m   0   0   0  184   0
+Ins   19  19  19  19
+===================================================================

@@ -30,7 +30,7 @@ for($i = 2; $i < $num_states; $i++)
 	print $fh "<State> $i <NumMixes> $num_mixes\n";	
 	for($j = 1; $j <= $num_mixes; $j++)
 	{
-		print $fh "\t<Mixture> j 1.0\n";
+		print $fh "\t<Mixture> $j .5\n";
 		print $fh "\t<Mean> $vec_size\n";
 		print $fh "\t", ("0.0 " x $vec_size), "\n";
 		print $fh "\t<Variance> $vec_size\n";
