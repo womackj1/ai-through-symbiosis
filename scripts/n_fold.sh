@@ -1,9 +1,14 @@
+die () {
+    printf >&2 "$@"
+    exit 1
+}
+[ "$#" -eq 3 ] || die "\n3 arguments required:\n -s split: fraction of data used for training\n -d data: path to folder containing data\n -n number: integer number of folds\n\n$# provided\n\n"
 while getopts s:d:n: flag
 do
     case "${flag}" in
         s) split=${OPTARG};;
-    	  d) dir=${OPTARG};;
-	      n) n=${OPTARG};;
+    	d) dir=${OPTARG};;
+	n) n=${OPTARG};;
     esac
 done
 echo "Training Split: $split"
@@ -68,7 +73,7 @@ do
 
     while read filename; do
       HParse grammar/grammar_letter_isolated_ai_general-${filename:9} word.lattice-${filename:9}
-      HVite -a -b sil -p 0 -t 0 -s 0 -A -T 1 -H /PhraseLevel-general-36/models/hmm0.19/newMacros -w /PhraseLevel-general-36/word.lattice-${filename:9} -S testsets/testing-extfile-${filename:9} -I /PhraseLevel-general-36/mlf/labels.mlf_tri_internal -i /PhraseLevel-general-36/ext/result.mlf_letter0 /PhraseLevel-general-36/dict/dict_letter2letter_ai_general /PhraseLevel-general-36/commands/commands_letter_isolated_ai_general; mv ext/result.mlf_letter0 results-${filename:9}
+      HVite -a -b sil -p 0 -t 0 -s 0 -A -T 1 -H /tmp/models/hmm0.19/newMacros -w /tmp/word.lattice-${filename:9} -S testsets/testing-extfile-${filename:9} -I /tmp/mlf/labels.mlf_tri_internal -i /tmp/ext/result.mlf_letter0 /tmp/dict/dict_letter2letter_ai_general /tmp/commands/commands_letter_isolated_ai_general; mv ext/result.mlf_letter0 results-${filename:9}
     done <test2
 
 
